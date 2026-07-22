@@ -17,18 +17,6 @@ Two building morphology maps were generated from vector building footprints:
    - A choropleth map is produced using these area classes.
    - Instead of a conventional legend, a **bar chart showing the frequency of buildings within          each area class** is embedded in the map. This allows the legend to communicate both the           colour classes and their distribution simultaneously.
 
-## Purpose
-
-The objective of this repository is to demonstrate different cartographic approaches for representing building morphology metrics while comparing discrete and continuous legend designs.
-
-The repository serves as an example of:
-
-- Building-level spatial metric calculation
-- Choropleth mapping with **sf** and **ggplot2**
-- Custom cartographic layouts in R
-- Alternative legend designs for thematic mapping
-- Integration of statistical distributions directly into map legends
-
 ## Legend Design
 
 Two different legend styles are intentionally used:
@@ -47,34 +35,11 @@ Two different legend styles are intentionally used:
 
 ## Note on the `legendry` Package
 
-While the `legendry` package provides an elegant solution for creating histogram-based legends for continuous variables, it currently offers limited flexibility for customizing certain graphical elements. In particular, modifying or adding labels to the histogram **y-axis** is not straightforward within the current implementation.
+While the `legendry` package provides an elegant solution for creating histogram-based legends for continuous variables, it currently offers limited flexibility for customizing certain graphical elements. In particular, modifying or adding labels to the histogram **y-axis** is not straightforward.
 
-For this reason, two different legend approaches are demonstrated in this repository:
+For this reason, two different legend approaches are demonstrated:
 
 - A custom bar-chart legend for discrete building area classes.
 - A `legendry` histogram legend for the continuous Shape Index.
 
-This comparison highlights both the strengths and the current customization limitations of the package.
 
-## Software
-
-- R
-- sf
-- ggplot2
-- legendry
-- ggspatial
-- patchwork
-- maptiles
-- tidyterra
-- dplyr
-
-## Output
-
-The repository produces publication-quality maps suitable for research and scientific reporting.
-
-- Discrete choropleth map of building area with an embedded bar-chart legend.
-- Continuous choropleth map of building Shape Index with a histogram legend generated using `legendry`.
-
-## License
-
-This repository is provided for research and educational purposes.
