@@ -5,7 +5,7 @@ The workflow demonstrates two different approaches to map legends for building-l
 
 ## Overview
 
-Two building morphology maps were generated from vector building footprints:
+Two building morphology maps were generated from building footprints geopackage file:
 1. **Building Shape Index Map**
    - The Shape Index is calculated for each building using its area and perimeter.
    - A continuous choropleth map is created to represent the variation in building compactness.
@@ -37,9 +37,6 @@ Two different legend styles are intentionally used:
 
 While the `legendry` package provides an elegant solution for creating histogram-based legends for continuous variables, it currently offers limited flexibility for customizing certain graphical elements. In particular, modifying or adding labels to the histogram **y-axis** is not straightforward.
 
-For this reason, two different legend approaches are demonstrated:
-
-- A custom bar-chart legend for discrete building area classes.
-- A `legendry` histogram legend for the continuous Shape Index.
-
-
+## Data Source:
+Henri Debray, German Aerospace Center (DLR)
+The data used is not freely available.
