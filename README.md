@@ -1,22 +1,21 @@
 # Scientific Graphs Summer 2026 (04-GEO-SOS7)
 # Building Morphology Mapping in R
 
-This repository contains R scripts for visualizing building morphology metrics using choropleth maps. The workflow demonstrates two different approaches to map legends for building-level spatial data, highlighting both the flexibility and current limitations of the `legendry` package.
+The workflow demonstrates two different approaches to map legends for building-level spatial data, highlighting both the flexibility and current limitations of the `legendry` package.
 
 ## Overview
 
-The repository includes two building morphology maps generated from vector building footprints:
+Two building morphology maps were generated from vector building footprints:
+1. **Building Shape Index Map**
+   - The Shape Index is calculated for each building using its area and perimeter.
+   - A continuous choropleth map is created to represent the variation in building compactness.
+   - The map uses the **`legendry` package** to display a histogram-style legend representing the       continuous distribution of Shape Index values.
 
-1. **Building Area Map**
+2. **Building Area Map**
    - Building footprint area is calculated for each individual building.
    - Areas are grouped into discrete classes.
    - A choropleth map is produced using these area classes.
-   - Instead of a conventional legend, a **bar chart showing the frequency of buildings within each area class** is embedded in the map. This allows the legend to communicate both the colour classes and their distribution simultaneously.
-
-2. **Building Shape Index Map**
-   - The Shape Index is calculated for each building using its area and perimeter.
-   - A continuous choropleth map is created to represent the variation in building compactness.
-   - The map uses the **`legendry` package** to display a histogram-style legend representing the continuous distribution of Shape Index values.
+   - Instead of a conventional legend, a **bar chart showing the frequency of buildings within          each area class** is embedded in the map. This allows the legend to communicate both the           colour classes and their distribution simultaneously.
 
 ## Purpose
 
