@@ -35,8 +35,8 @@ Two different legend styles are intentionally used:
 
 ## Note on the `legendry` Package
 
-While the `legendry` package provides an elegant solution for creating histogram-based legends for continuous variables, it currently offers limited flexibility for customizing certain graphical elements. In particular, modifying or adding labels to the histogram **y-axis** is not straightforward.
+While the `legendry` package provides an elegant solution for creating histogram-based legends for continuous variables, it currently offers limited flexibility for customizing certain legend components. In particular, modifying or adding labels to the histogram **y-axis** is not straightforward.
 
 ## Data Source:
 Henri Debray, German Aerospace Center (DLR)
-The data used is not freely available.
+-The data used is not freely available.
