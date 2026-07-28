@@ -23,4 +23,4 @@ While the `legendry` package provides an elegant solution for creating automatic
 
 ## Data Source:
 Henri Debray, German Aerospace Center (DLR)
- -The data used is not freely available.
+
