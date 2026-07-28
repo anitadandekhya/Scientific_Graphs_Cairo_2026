@@ -5,7 +5,7 @@ The workflow demonstrates two different approaches to map legends for building-l
 
 ## Overview
 
-Two building morphology maps were generated from building footprints geopackage file:
+Two building morphology maps were generated from building footprints of New Cairo, Egypt geopackage file:
 1. **Building Shape Index Map**
    - The Shape Index is calculated for each building using its area and perimeter.
    - A continuous choropleth map is created to represent the variation in building compactness.
@@ -15,28 +15,12 @@ Two building morphology maps were generated from building footprints geopackage 
    - Building footprint area is calculated for each individual building.
    - Areas are grouped into discrete classes.
    - A choropleth map is produced using these area classes.
-   - Instead of a conventional legend, a **bar chart showing the frequency of buildings within          each area class** is embedded in the map. This allows the legend to communicate both the           colour classes and their distribution simultaneously.
-
-## Legend Design
-
-Two different legend styles are intentionally used:
-
-### Building Area
-
-- Discrete area classes
-- Embedded bar chart showing the frequency of each area class
-- Easy interpretation of both the class intervals and data distribution
-
-### Shape Index
-
-- Continuous colour scale
-- Histogram legend generated using the **legendry** package
-- Suitable for representing continuously varying building morphology metrics
+   - Instead of a conventional legend, a **bar-graph showing the frequency of buildings within          each area class** is shown in the map. This allows the legend to communicate both the           colour classes and their distribution simultaneously.
 
 ## Note on the `legendry` Package
 
-While the `legendry` package provides an elegant solution for creating histogram-based legends for continuous variables, it currently offers limited flexibility for customizing certain legend components. In particular, modifying or adding labels to the histogram **y-axis** is not straightforward.
+While the `legendry` package provides an elegant solution for creating automatic histogram-based legends for continuous variables, it currently offers limited flexibility for customizing certain legend components. In particular, modifying or adding labels to the histogram **y-axis** is not straightforward.
 
 ## Data Source:
 Henri Debray, German Aerospace Center (DLR)
--The data used is not freely available.
+ -The data used is not freely available.
